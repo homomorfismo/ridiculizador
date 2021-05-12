@@ -1,13 +1,10 @@
 function vowelToi() {
 
   var original = document.getElementById('original').value;
-  var newText = original.replaceAll(/c[aou]/g,'qui')
-  newText = newText.replaceAll(/C[aou]/g,'Qui')
-  newText = newText.replaceAll(/Z[aou]/g,'Ci')
-  newText = newText.replaceAll(/z[aou]/g,'ci')
-  newText = newText.replaceAll(/[AEOU]/g,'I')
+  var newText = original.replaceAll(/[AEOU]/g,'I')
   newText = newText.replaceAll(/[aeou]/g,'i')
-  newText = newText.replaceAll(/qii/g,'qui')
+  newText = newText.replaceAll(/[ÁÉÚÓ]/g,'Í')
+  newText = newText.replaceAll(/[áéóú]/g,'í')
 
   document.getElementById('ridiculizado').value= newText;
 
