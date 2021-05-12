@@ -2,7 +2,7 @@ function vowelToi() {
 
   var original = document.getElementById('original').value;
   var newText = original.replaceAll(/[AEOU]/g,'I')
-  newText = newText.replaceAll(/[aeou]/g,'i')
+  newText = newText.replaceAll(/[aeouü]/g,'i')
   newText = newText.replaceAll(/[ÁÉÚÓ]/g,'Í')
   newText = newText.replaceAll(/[áéóú]/g,'í')
 
