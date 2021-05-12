@@ -7,7 +7,8 @@ function vowelToi() {
   newText = newText.replaceAll(/z[aou]/g,'ci')
   newText = newText.replaceAll(/[AEOU]/g,'I')
   newText = newText.replaceAll(/[aeou]/g,'i')
-  newText = newText.replaceAll(/qii/g,'qui')
+  newText = newText.replaceAll(/[ÁÉÚÓ]/g,'Í')
+  newText = newText.replaceAll(/[áéóú]/g,'í')
 
   document.getElementById('ridiculizado').value= newText;
 
